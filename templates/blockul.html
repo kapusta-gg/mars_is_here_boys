@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block ul %}
+{% set prof_list = ['инженер', 'медик', 'пилот', 'капитан'] %}
+    <ul>
+        {% for prof in prof_list %}
+        <li>{{ prof }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
